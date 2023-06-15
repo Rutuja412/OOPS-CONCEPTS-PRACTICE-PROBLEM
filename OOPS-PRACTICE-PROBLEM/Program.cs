@@ -66,6 +66,18 @@ namespace OOPS_PRACTICE_PROBLEM
                     Demo demo = new Demo();
                     demo.CreateVirtualMethod();//Virtual Method
                     break;
+                case 8:
+                    Console.WriteLine("Types of Inheritance");
+                    Console.WriteLine("Single Inheritance");
+                    //SingleInheritance singleInheritance= new SingleInheritance();
+                    // singleInheritance.ShowSingleInheritance();
+                    C c = new C();
+                    c.RecieveGreeting();//Hierarical
+                    Tester tester = new Tester();
+                    tester.Function();
+                    tester.programming();
+                    tester.Testing();
+                    break;
 
 
             }
