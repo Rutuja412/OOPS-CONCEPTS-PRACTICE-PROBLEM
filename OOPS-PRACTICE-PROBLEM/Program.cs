@@ -9,7 +9,7 @@ namespace OOPS_PRACTICE_PROBLEM
         {
             Console.WriteLine("Welcome to OOPS Concept");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Exit ");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4. Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -23,6 +23,11 @@ namespace OOPS_PRACTICE_PROBLEM
                     Car car = new Car();
                     car.horn();
                     Console.WriteLine("Color:" + car.color + " \nBrand:" + car.brand);
+                    break;
+                case 3:
+                    Console.WriteLine("Polymorphism - Method Overloding");
+                    Console.WriteLine("Addition :" + OverlodingPoly.add(6, 6));
+                    Console.WriteLine("Addition : " + OverlodingPoly.add(7, 8, 67));
                     break;
 
             }
