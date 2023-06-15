@@ -9,7 +9,7 @@ namespace OOPS_PRACTICE_PROBLEM
         {
             Console.WriteLine("Welcome to OOPS Concept");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5 Abstraction \n6.Variables  ");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5 Abstraction \n6.Variables  \n7.Types of Method ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -56,6 +56,15 @@ namespace OOPS_PRACTICE_PROBLEM
                     variables1.EmployeeName = "Radha";//Instance Second Object
                     variables1.EmployeeId = 2;
                     Console.WriteLine("Employee Name= " + variables1.EmployeeName + " \nEmployee ID; " + variables1.EmployeeId);
+                    break;
+                    case 7:
+                    Console.WriteLine("Types of Methods");
+                    TypesOfMethods.CreateStaticMethod();//Static Method
+                    TypesOfMethods type = new TypesOfMethods();
+                    type.CreateInstanceMethod();//InstanceMethod
+                    type.CreateVirtualMethod();//Will print only parent class method
+                    Demo demo = new Demo();
+                    demo.CreateVirtualMethod();//Virtual Method
                     break;
 
 
