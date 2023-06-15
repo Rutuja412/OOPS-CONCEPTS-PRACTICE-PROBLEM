@@ -9,7 +9,7 @@ namespace OOPS_PRACTICE_PROBLEM
         {
             Console.WriteLine("Welcome to OOPS Concept");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5 Exit  ");
+            Console.WriteLine("1.Class &Objects \n2.Inheritance(Vehicle)\n3.Polymorphism - Method Overloding\n4.Overriding(poly)\n5 Abstraction  ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -33,6 +33,12 @@ namespace OOPS_PRACTICE_PROBLEM
                     Console.WriteLine("Method Overriding");
                     Dog dog = new Dog();
                     dog.AnimalEat();
+                    break;
+                case 5:
+                    Console.WriteLine("Abstaction");
+                    Cat cat = new Cat();
+                    cat.AnimalSound();
+                    cat.Eat();
                     break;
 
 
